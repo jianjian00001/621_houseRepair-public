@@ -1,0 +1,179 @@
+package com.entity.model;
+
+import com.entity.YezhuEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 业主
+ * 接收传参的实体类  
+ *（实际开发中配合移动端接口开发手动去掉些没用的字段， 后端一般用entity就够用了） 
+ * 取自ModelAndView 的model名称
+ * @author 
+ * @email 
+ * @date 2022-03-22 09:39:51
+ */
+public class YezhuModel  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 密码
+	 */
+	
+	private String mima;
+		
+	/**
+	 * 业主姓名
+	 */
+	
+	private String yezhuxingming;
+		
+	/**
+	 * 性别
+	 */
+	
+	private String xingbie;
+		
+	/**
+	 * 业主手机
+	 */
+	
+	private String yezhushouji;
+		
+	/**
+	 * 身份证
+	 */
+	
+	private String shenfenzheng;
+		
+	/**
+	 * 楼房号
+	 */
+	
+	private String loufanghao;
+		
+	/**
+	 * 车牌号
+	 */
+	
+	private String chepaihao;
+				
+	
+	/**
+	 * 设置：密码
+	 */
+	 
+	public void setMima(String mima) {
+		this.mima = mima;
+	}
+	
+	/**
+	 * 获取：密码
+	 */
+	public String getMima() {
+		return mima;
+	}
+				
+	
+	/**
+	 * 设置：业主姓名
+	 */
+	 
+	public void setYezhuxingming(String yezhuxingming) {
+		this.yezhuxingming = yezhuxingming;
+	}
+	
+	/**
+	 * 获取：业主姓名
+	 */
+	public String getYezhuxingming() {
+		return yezhuxingming;
+	}
+				
+	
+	/**
+	 * 设置：性别
+	 */
+	 
+	public void setXingbie(String xingbie) {
+		this.xingbie = xingbie;
+	}
+	
+	/**
+	 * 获取：性别
+	 */
+	public String getXingbie() {
+		return xingbie;
+	}
+				
+	
+	/**
+	 * 设置：业主手机
+	 */
+	 
+	public void setYezhushouji(String yezhushouji) {
+		this.yezhushouji = yezhushouji;
+	}
+	
+	/**
+	 * 获取：业主手机
+	 */
+	public String getYezhushouji() {
+		return yezhushouji;
+	}
+				
+	
+	/**
+	 * 设置：身份证
+	 */
+	 
+	public void setShenfenzheng(String shenfenzheng) {
+		this.shenfenzheng = shenfenzheng;
+	}
+	
+	/**
+	 * 获取：身份证
+	 */
+	public String getShenfenzheng() {
+		return shenfenzheng;
+	}
+				
+	
+	/**
+	 * 设置：楼房号
+	 */
+	 
+	public void setLoufanghao(String loufanghao) {
+		this.loufanghao = loufanghao;
+	}
+	
+	/**
+	 * 获取：楼房号
+	 */
+	public String getLoufanghao() {
+		return loufanghao;
+	}
+				
+	
+	/**
+	 * 设置：车牌号
+	 */
+	 
+	public void setChepaihao(String chepaihao) {
+		this.chepaihao = chepaihao;
+	}
+	
+	/**
+	 * 获取：车牌号
+	 */
+	public String getChepaihao() {
+		return chepaihao;
+	}
+			
+}
